@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="表单(2).css">
+</head>
+
+<body>
+    <div class="mainBody">
+        <div class="title">验证颜色/url/汉字</div>
+        <div class="sign_in">
+            <form action="">
+                <ul>
+                    <li>验证颜色 <input type="text" id="user" class="word_inp"></li>
+                    <li>
+                        <span><i class="word" id="p1">长度7位，以“#”开头，后6位为0-9</i></span>
+                    </li>
+                    <li>密码 <input type="password" id="f_pass" class="word_inp"></li>
+                    <li>
+                        <span><i class="text" id="p2">长度不限 以http:/https:/不含两者开头，开头为www,结尾为com</i></p>
+                    </li>
+                    <li>汉字验证<input type="text" id="s_pass" class="word_inp"></li>
+                    <li>
+                        <span><i class="word" id="p3">是否包含汉字</i></span>
+                    </li>
+                    
+                    <li>
+                        <input type="button" value="确认提交" class="fir_button sec_button">
+                        <input type="reset" value="重新填写" onclick="buttonClick();" class="sec_button">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="表单(2).js"></script>
+</body>
+
+</html>

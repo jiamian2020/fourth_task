@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="表单.css">
+</head>
+
+<body>
+    <div class="mainBody">
+        <div class="title">创建账户</div>
+        <div class="sign_in">
+            <form action="">
+                <ul>
+                    <li>用户名 <input type="text" id="user" class="word_inp"></li>
+                    <li>
+                        <span><i class="word" id="p1">长度4到16位（字母、数字、下划线、减号皆可）</i></span>
+                    </li>
+                    <li>密码 <input type="password" id="f_pass" class="word_inp"></li>
+                    <li>
+                        <span><i class="word" id="p2">长度8位 第一位必须是1 二到三位为0-5任意数 四到六位为6-9任意数
+                                八位九位为a到d之间的字母（大小写皆允许）</i></p>
+                    </li>
+                    <li>确认密码<input type="password" id="s_pass" class="word_inp"></li>
+                    <li>
+                        <span><i class="word" id="p3">和上一步输入的密码需要一致</i></span>
+                    </li>
+                    <li>手机号码<input type="text" id="phoneNum" class="word_inp"></li>
+                    <li>
+                        <span><i class="word" id="p4">长度11位 第一位为1 第二位为3-9任意数字 第三位以后任意数字9位</i></span>
+                    </li>
+                    <li>
+                        <input type="button" value="确认提交" class="fir_button sec_button">
+                        <input type="reset" value="重新填写" onclick="buttonClick();" class="sec_button">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="表单.js"></script>
+</body>
+
+</html>
